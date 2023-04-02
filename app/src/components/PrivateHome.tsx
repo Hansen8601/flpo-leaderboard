@@ -195,10 +195,6 @@ export default function PrivateHome(user) {
         {message}
       </Typography>
 
-      <Typography variant="h4" component="h2" gutterBottom>
-        Adult
-      </Typography>
-
       <TextField
         label="Search"
         variant="outlined"
@@ -207,6 +203,10 @@ export default function PrivateHome(user) {
           // handle search logic here
         }}
       />
+
+      <Typography variant="h4" component="h2" gutterBottom>
+        Adult
+      </Typography>
 
       <TableContainer className="table-container">
         <Table>
@@ -217,6 +217,7 @@ export default function PrivateHome(user) {
               <TableCell>Name</TableCell>
               <TableCell>Length</TableCell>
               <TableCell>Weight</TableCell>
+              <TableCell></TableCell>
             </TableRow>
           </TableHead>
 
@@ -269,6 +270,7 @@ export default function PrivateHome(user) {
               <TableCell>Name</TableCell>
               <TableCell>Length</TableCell>
               <TableCell>Weight</TableCell>
+              <TableCell></TableCell>
             </TableRow>
           </TableHead>
 

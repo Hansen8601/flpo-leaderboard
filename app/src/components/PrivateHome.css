@@ -24,9 +24,13 @@ body {
   /* form styles */
   
   form {
+    display: inline-block;
+    max-width: 800px;
+    /*
     margin-bottom: 2rem;
     border: 10px;
-    max-width: 600px;
+
+    */
   }
   
   .form-group {
