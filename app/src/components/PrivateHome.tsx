@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import React from 'react';
 import { Button, Grid, FormControl, MenuItem, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography, TextField } from '@mui/material';
+import "./PrivateHome.css"
 
 export interface Entry {
   name: string;
@@ -97,10 +98,10 @@ export default function PrivateHome(user) {
 
   return (
 
-    <div>
+
   <div>
       <Typography variant="h4" component="h2" gutterBottom>
-        Add Data
+        Add Entry
       </Typography>
 
       <form onSubmit={handleInsert}>
@@ -193,9 +194,7 @@ export default function PrivateHome(user) {
       <Typography variant="body1" component="p" gutterBottom>
         {message}
       </Typography>
-    </div>
 
-    <div>
       <Typography variant="h4" component="h2" gutterBottom>
         Adult
       </Typography>
@@ -308,7 +307,7 @@ export default function PrivateHome(user) {
           )}
         </Table>
       </TableContainer>      
-    </div>
-</div>  
+  </div>
+
 );
 }
