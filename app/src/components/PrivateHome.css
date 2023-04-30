@@ -20,9 +20,15 @@ body {
     margin: 0 auto;
     padding: 2rem;
   }
-  
+
+   /* Custom by Phil */
+  .MuiTableContainer-root {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
   /* form styles */
-  
   form {
     display: inline-block;
     max-width: 800px;

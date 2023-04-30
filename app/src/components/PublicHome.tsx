@@ -48,9 +48,9 @@ export default function GetData() {
   })
   
   return (
-  <Box>
+  <Box >
     <Typography variant="h4" gutterBottom>Adult</Typography>
-    <Grid container spacing={4} className="grid-container">
+    <Grid container spacing={4} className="grid-container" >
       {data.filter((item) => item.age_group === 'Adult').length > 0 ? (
       // group data by species
         Object.entries(
@@ -74,14 +74,13 @@ export default function GetData() {
               </ListItem>
             ))}
           </List>
-          <Divider />
         </Grid>
       ))
     ) : (
       <p>No data found for Adult.</p>
     )}
   </Grid>
-
+  <Divider />
   <Typography variant="h4" gutterBottom>Children</Typography>
     <Grid container spacing={4} className="grid-container">
       {data.filter((item) => item.age_group === 'Child').length > 0 ? (
